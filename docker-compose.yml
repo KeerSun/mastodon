@@ -64,8 +64,6 @@ services:
       - ./public/system:/mastodon/public/system
 
   streaming:
-    labels:
-      shipyard.route: '/'
     build: .
     image: tootsuite/mastodon
     restart: always
